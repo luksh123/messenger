@@ -1,0 +1,52 @@
+{
+  "name": "luksh123/messenger",
+  "description": "Nette Framework implementation of Symfony Messenger",
+  "keywords": [
+    "nette",
+    "symfony",
+    "messages",
+    "messenger",
+    "scheduler"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/luksh123/messenger",
+  "authors": [
+    {
+      "name": "Lukas Divacky",
+      "homepage": "https://ldtech.cz"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "nette/di": "^3.1.8",
+    "symfony/messenger": "^7.1",
+    "symfony/console": "^7.1"
+  },
+  "require-dev": {
+    "psr/log": "^3.0.0",
+    "tracy/tracy": "^2.10.5",
+    "contributte/qa": "^0.4",
+    "contributte/tester": "^0.3",
+    "contributte/phpstan": "^0.1",
+    "mockery/mockery": "^1.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LDTech\\Messenger\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
